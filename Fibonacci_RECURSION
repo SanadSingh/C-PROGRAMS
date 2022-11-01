@@ -1,0 +1,49 @@
+//PROGRAM TO PRINT FIBONACCI SERIES USING RECURSIONS
+
+
+# include <stdio.h>
+
+
+int Fibonacci();
+int Fibonacci(int f)
+{
+    
+   if(f==1 || f==2)
+   {
+       return(1);
+   }
+   
+  else
+  {
+      return(( Fibonacci(f-1) + Fibonacci(f-2)) );
+  }
+  
+   
+}
+
+
+int  main()
+{
+    int n,count=1;
+    printf("Enter the no. of terms : \n");
+    scanf("%d",&n);
+    printf("\n\nFibonacci series is as follows : \n");
+    
+    NOT_A_LOOP :
+    
+    if (count<n)
+    {
+        printf("\n%d",Fibonacci(count));
+        count+=1;
+        goto NOT_A_LOOP;
+    }
+    
+    else
+    {
+       printf("\n%d",Fibonacci(n)); 
+    }
+    
+    
+   
+    return(0);
+}
