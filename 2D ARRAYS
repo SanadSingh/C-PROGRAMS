@@ -10,7 +10,7 @@ int main()
     scanf("%d",&c);
     printf("\n");
     
-    int arr[r][c]; //DECLARATION OF ARRAY
+    int arr[r][c]; //DECLARATION OF ARRAY SYNTAX : var_name[row][column]
     
     for (i=0;i<=(r-1);i++)
     {
