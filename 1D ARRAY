@@ -1,0 +1,34 @@
+/*Program to understand 1D arrays */
+
+# include <stdio.h>
+
+int main()
+{
+    int i,n;
+    printf("Enter the length of array : \n");
+    scanf("%d",&n);
+    printf("\n");
+    
+    int arr[n];
+    
+    for (i=0;i<=(n-1);i++)
+    {
+        printf("Enter the value of element no : %d\n",(i+1));
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("\n");
+    printf("\n");
+    printf("The array is as follows : \n");
+    
+    for(i=0;i<=(n-1);i++)
+    {
+        printf("%d\n",arr[i]);
+    }
+    
+    /* To declare array directly do it like this int arr[5]={1,2,3,4,5};
+    
+    return(0);
+
+    
+}
