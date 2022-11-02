@@ -1,3 +1,5 @@
+//PROGRAM TO PRINT 3D ARRAY
+//REMEMBER THAT ARRAY INDEX STARTS FROM ZERO
 # include <stdio.h>
 
 int main()
