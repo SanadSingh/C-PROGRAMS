@@ -1,4 +1,5 @@
 /*Program to understand 2D arrays  :D:) */
+//REMEMBER THAT ARRAY INDEX STARTS FROM ZERO
 
 # include <stdio.h>
 
