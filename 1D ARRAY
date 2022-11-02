@@ -9,7 +9,7 @@ int main()
     scanf("%d",&n);
     printf("\n");
     
-    int arr[n];
+    int arr[n]; //DECLARATION OF ARRAY
     
     for (i=0;i<=(n-1);i++)
     {
