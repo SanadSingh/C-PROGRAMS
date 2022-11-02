@@ -1,0 +1,44 @@
+/*Program to understand 2D arrays  :D:) */
+
+# include <stdio.h>
+
+int main()
+{
+    int i,j,r,c;
+    printf("Enter the length of rows and columns respectively : \n");
+    scanf("%d",&r);
+    scanf("%d",&c);
+    printf("\n");
+    
+    int arr[r][c];
+    
+    for (i=0;i<=(r-1);i++)
+    {
+        for(j=0;j<=(c-1);j++)
+        {
+        printf("Enter the value of element row no. :%d and column no. :%d\n",(i+1),(j+1));
+        scanf("%d",&arr[i][j]);
+        }
+    }
+    
+    printf("\n");
+    printf("\n");
+    printf("The array is as follows : \n");
+    
+    for(i=0;i<=(r-1);i++)
+    {
+        for(j=0;j<=(c-1);j++)
+        {
+            printf("%d  ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return(0);
+    
+    /*IF YOU WANT TO DECLARE DIRECTLY YOU HAVE TO DO IT LIKE THIS
+      int arr[2][4]={ {1,4,35,6}, {2,35,26,41} }
+      First you have to specify rows and then columns */
+
+    
+}
