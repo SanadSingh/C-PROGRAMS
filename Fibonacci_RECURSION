@@ -8,7 +8,12 @@ int Fibonacci();
 int Fibonacci(int f)
 {
     
-   if(f==1 || f==2)
+   if(f==1)
+   {
+       return(0);
+   }
+   
+   else if (f==2)
    {
        return(1);
    }
