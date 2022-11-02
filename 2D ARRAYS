@@ -38,6 +38,10 @@ int main()
     
     /*IF YOU WANT TO DECLARE DIRECTLY YOU HAVE TO DO IT LIKE THIS
       int arr[2][4]={ {1,4,35,6}, {2,35,26,41} }
+      1,4,35,6 is first row
+      2,35,26,41 is second row
+      
+      
       First you have to specify rows and then columns  */
 
     
