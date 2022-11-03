@@ -1,0 +1,46 @@
+# include <stdio.h>
+
+void main()
+{
+    int arr[5]={1,2,7,4,5};
+    
+    int* ptr=arr;
+    
+    printf("The location of first element of array is %p\n",ptr);
+    printf("The location of first element of array is %p\n",arr);
+    printf("The location of first element of array is %p\n",&arr[0]);
+    printf("The value of element no. 3 is : %d\n",(arr[2]));
+    printf("The value of element no. 3 is : %d\n",(*(arr + 2)));
+    
+}  /* SYNTAX to store location of first element of an array of data type
+      'data_type' is :
+      data_type* pointer_name=ARRAY_NAME
+      or
+      data_type* pointer_name=&ARRAY_NAME[0];
+      
+      The above statement means that pointer_name is assigned the address of the
+      first element of array.
+      
+      printf("%d",pointer_name);
+      printf("%d",&ARRAY_NAME[0]);
+      
+      These two statemnets will print the same output i.e location of first
+      element.
+      
+      
+      
+      SYNTAX to store location of element index no. : i of an array of data type
+      'data_type' is :
+      data_type* pointer_name=&ARRAY_NAME[i];
+      
+      The above statement means that pointer_name is assigned the address of the
+      (i+1)th element of array.
+      
+      printf("%d",pointer_name);
+      printf("%d",&ARRAY_NAME[i]);
+      
+      These two statemnets will print the same output i.e location of (i+1)th
+      element.
+      
+      
+      */
