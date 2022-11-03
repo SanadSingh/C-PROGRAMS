@@ -6,7 +6,7 @@ int main()
   int a;
   int* ptra=&a;
   printf("Enter the value of a : \n");
-  scanf("%d",&a);
+  scanf("%d",&a);//This line is used to store the integer at the address &a
   
   printf("\nThe value of a is : %d",a);
   printf("\nThe location of a is : %p",ptra);
