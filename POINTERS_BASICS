@@ -13,6 +13,7 @@ int main()
   printf("\nThe location of a is : %p",&a);
   
   printf("\nThe value of a is : %d",*ptra);
+  printf("\nThe value of a is : %d",*&a);
   printf("\nThe location of pointer to a is : %p",&ptra);
   
   /* '&' operator is used to refer to the adddress of a variable, therefore pointer to 'a'
