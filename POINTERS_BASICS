@@ -1,0 +1,26 @@
+// Program to understand pointers
+# include <stdio.h>
+
+int main()
+{
+  int a;
+  int* ptra=&a;
+  printf("Enter the value of a : \n");
+  scanf("%d",&a);
+  
+  printf("\nThe value of a is : %d",a);
+  printf("\nThe location of a is : %p",ptra);
+  printf("\nThe location of a is : %p",&a);
+  
+  printf("\nThe value of a is : %d",*ptra);
+  printf("\nThe location of pointer to a is : %p",&ptra);
+  
+  /* '&' operator is used to refer to the adddress of a variable, therefore pointer to 'a'
+  in the above program i.e ptra and &a give the same thing that is address of the variable
+  'a'
+  
+  
+  '*' operator is used as dereference also called indirecction operator is used to get value
+  of the given address*/
+  
+}
