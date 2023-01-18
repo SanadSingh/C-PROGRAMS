@@ -1,0 +1,35 @@
+# include <iostream>
+using namespace std;
+
+/* Program to understand local and global variables 
+
+Very easy to understand
+As the name suggests global variable can be accessed from anywhere whereas 
+Local variable can be accessed from its respective function only
+
+Global variable are not a part of any function.
+Local variable are always a part of function be it main function or some other function
+
+Local variable and Global variable can have the same name.
+
+Working :
+
+Compiler will always try to check whether variable is available locally. If it is not available locally then it will try finding
+the global variable of the same name*/
+
+int global = 619;
+int loc=92;
+
+int main()
+{
+    int loc=9;
+    
+    cout<<"Value of local variable is : "<<loc;
+    cout<<"\nValue of global variable is : "<<global;
+    return(0);
+}
+
+/*  Compilation began from main method , it found the value of loc within the function therefore it didnt searched for it 
+outside the function
+
+When the compiler couldn't find the value of variable global therefore it printed the value of global variable  */ 
