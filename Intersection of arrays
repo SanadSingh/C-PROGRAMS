@@ -1,0 +1,66 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c,i,j;
+    cout<<"Enter length of first array : "<<endl;
+    cin>>a;
+    cout<<"Enter length of second array : "<<endl;
+    cin>>b;
+    
+    int arr1[a],arr2[b],arr3[c];
+    
+    if (a<b)
+    {
+        c=a;
+    }
+    
+    else
+    {
+        c=b;
+    }
+    
+    cout<<"\nNow enter the first array : "<<endl;
+    
+    
+    
+    for(i=1;i<=a;i++)
+    {
+        cin>>arr1[i];
+        
+    }
+    
+    cout<<"\nNow enter the second array : "<<endl;
+    
+    for(i=1;i<=b;i++)
+    {
+        cin>>arr2[i];
+        
+    }
+    
+    
+    for(i=1;i<=a;i++)
+    {
+        
+        for(j=1;j<=b;j++)
+        {
+            if (arr1[i]==arr2[j])
+            {
+                arr3[i]=arr1[i];
+            }
+        }
+    }
+    
+    cout<<"\nThe union array is as follows : \n";
+    
+    for(i=1;i<=c;i++)
+    {
+        cout<<arr3[i]<<endl;
+    }
+    
+    return(0);
+    
+    
+}
+    
