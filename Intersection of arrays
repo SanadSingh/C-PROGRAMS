@@ -52,7 +52,7 @@ int main()
         }
     }
     
-    cout<<"\nThe union array is as follows : \n";
+    cout<<"\nThe intersection of array is as follows : \n";
     
     for(i=1;i<=c;i++)
     {
