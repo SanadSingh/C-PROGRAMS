@@ -3,6 +3,11 @@ using namespace std;
 
 /* Program to understand local and global variables 
 
+Types of data types : 
+Built-in : int,short,byte,long
+User-defined : Union,Struct,enum
+Derived : Array,function,pointer
+
 Very easy to understand
 As the name suggests global variable can be accessed from anywhere whereas 
 Local variable can be accessed from its respective function only
