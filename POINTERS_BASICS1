@@ -13,10 +13,7 @@ void main()
     printf("The value of element no. 3 is : %d\n",(*(arr + 2)));
     
 }  /* 
-       printf("The location of first element of array is %p\n",arr);
-       printf("The location of first element of array is %p\n",&arr[0]);
-
-
+      
       SYNTAX to store location of first element of an array of data type
       'data_type' is :
       data_type* pointer_name=ARRAY_NAME
