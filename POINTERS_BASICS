@@ -20,7 +20,8 @@ int main()
   in the above program i.e (ptra) and (&a) give the same thing on printing on output screen that is address of the variable
   'a'
   
-  To store address of an int variable , you need to make an int pointer,To store address of a char variable you need to make a char pointer and so on
+  To store address of an int variable , you need to make an int pointer,
+  To store address of a char variable you need to make a char pointer and so on
   
   DECLARATION SYNTAX : data_type* pointer_name ;
   
