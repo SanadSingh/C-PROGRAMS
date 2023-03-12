@@ -1,0 +1,40 @@
+/*KEEP THIS SIMPLE ANALOGY IN THE MIND
+
+VARIABLE IS A HOUSE
+VALUE LIVES IN THE HOUSE
+POINTER IS THE ADDRESS OF THE HOUSE
+*POINTER GIVES THE VALUE LIVING IN THAT HOUSE. */
+
+
+# include <iostream>
+using namespace std;
+
+swap(int* ptra,int* ptrb);
+
+int main()
+{
+   int a,b;
+   cout<<"Enter the value of a : "<<endl;
+   cin>>a;
+   cout<<"Enter the value of b : "<<endl;
+   cin>>b;
+   
+   swap(&a,&b)
+   
+   cout<<"Values after swapping are : "<<endl;
+   cout<<"a = "<<a<<endl;
+   cout<<"b = "<<b<<endl;
+   
+   return(0);
+   
+}
+
+swap(int* ptra,int* ptrb)
+{
+    int temp=*ptra;
+    *ptra=*ptrb;
+    *ptrb=*ptra;
+    
+    }
+   
+  
