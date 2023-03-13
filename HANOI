@@ -1,0 +1,42 @@
+# include <iostream>
+using namespace std;
+
+void HANOI(int,int,int,int);
+
+int main()
+{
+    int n, start, end, aux;
+    cout<<"Enter the no. of discs : ";
+    cin>>n;
+    cout<<"Enter the initial rod : ";
+    cin>>start;
+    cout<<"Enter the end rod : ";
+    cin>>end;
+    cout<<"Enter the aux rod : ";
+    cin>>aux;
+    
+     HANOI(n,start,end,aux);
+    
+    return(0);
+    
+    
+    
+    
+}
+
+void HANOI(int n,int start, int end, int aux)
+{
+    
+  if(n>0)
+  
+      
+      
+      
+  {   
+     
+      HANOI((n-1),start,aux,end);
+      cout<<"Move the disc from "<<start<<" to "<<end<<endl;
+    
+      HANOI((n-1),aux,end,start);
+  }
+}
