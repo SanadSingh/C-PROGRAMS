@@ -1,0 +1,62 @@
+# include <iostream>
+using namespace std;
+
+class CricketPlayer
+{
+    private : //The variables and functions defined inside private access modifier can only be accessed from scope of the class
+    int height,weight;
+    
+    public : //The variables and functions defined inside private access modifier can be accessed from anywhere in the code
+    int strikerate,centuries;
+    
+    void printData()
+    { 
+    cout<<"The height of the player is : "<<height<<endl;
+    cout<<"The weight of the player is : "<<weight<<endl;
+    cout<<"The strike rate of the player is : "<<strikerate<<endl;
+    cout<<"The centuries scored by the player is : "<<centuries<<endl;
+        
+    } 
+    
+    void ExtractData(int,int); //Declaration of the function
+};
+
+
+/* SYNTAX FOR DEFINING A FUNCTION OUTSIDE CLASS :
+
+RETURN_TYPE CLASS_NAME :: FUNC_NAME(VARIABLES WITH RESP DATA TYPE)
+{
+   
+   body
+   
+}   
+
+:: SCOPE RESOLUTION OPERATOR */
+  
+void CricketPlayer ::ExtractData(int a, int b) 
+{
+    height=a;
+    weight=b;
+}
+
+int main()
+{
+  /*  SYNTAX FOR OBJECT CREATION
+  
+  CLASS_NAME OBJ_NAME; 
+  
+  
+  SYNTAX FOR ACCESSING VARS AND FUNCS
+  
+  OBJ_NAME.VAR_NAME=VALUE
+  OBJ_NAME.FUNC_NAME(VARS WITH DATA TYPES ) */
+    
+    
+    CricketPlayer M4CH1NE;
+    //M4CH1NE.height=200; will throw an error
+    M4CH1NE.strikerate=160;
+    M4CH1NE.centuries=67;
+    M4CH1NE.ExtractData(200,90);
+    M4CH1NE.printData();
+    return(0);
+}
