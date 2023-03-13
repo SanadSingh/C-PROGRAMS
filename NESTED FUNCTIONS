@@ -1,0 +1,89 @@
+/* A THING WHICH YOU WOULD HAVE NOTICED IS THAT STRING S IS AVAILABLE IN ALL THE functions
+   THIS IS BECAUSE IT IS DECLARED AS PRIVATE, AND PRIVATE VARIABLES CAN BE ACCESSED BY MEMBER functions
+   
+   NOTE THAT : TAKE,CHKBIN,COMPPLIMENT,DISPLAY ARE MEMBER FUNCTIONS OF CLASS StringBin  */
+
+
+
+
+
+# include <iostream>
+# include <string>
+using namespace std;
+
+class StringBin
+{
+    //All the class members i.e functions and variables of a class are declared as private by default
+    
+    string s;
+    public:
+    void take(void);
+    void chkbin(void);
+    void compliment(void);
+    void display(void);
+    
+};
+
+void StringBin :: take(void)
+{
+  cout<<"Enter the binary number "<<endl;
+  cin>>s;
+  cout<<endl;
+}
+
+void StringBin :: chkbin(void)
+{
+    int i;
+    for(i=0;i<=(s.length()-1);i++)
+    {
+        if (s.at(i)!='0' && s.at(i)!='1')
+        {
+            
+            cout<<"Invalid input"<<endl;
+            exit(0);
+        }
+    }
+}
+
+
+void StringBin :: compliment(void)
+{  Bin.chkbin(); // NESTED FUNCTIONS
+   int i;
+    for(i=0;i<=(s.length()-1);i++)
+    {
+        if (s.at(i)=='0')
+        {
+            s.at(i)='1';
+        }
+        
+        else
+        {
+            s.at(i)='0';
+        }
+    }
+    
+}
+
+
+void StringBin :: display(void)
+{
+    cout<<"One's compliment : "<<s;
+}
+
+
+
+
+
+
+
+
+int main()
+{
+    StringBin Bin;
+    Bin.take();
+    Bin.chkbin();
+    Bin.compliment();
+    Bin.display();
+    
+    return(0);
+}
