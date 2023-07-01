@@ -1,0 +1,50 @@
+CASTING OF DATA TYPES : 
+
+1.IMPLICIT 
+2.EXPLICIT
+
+1. IMPLICIT CONVERSION MEANS AUTOMATIC CONVBERSION TO DATA TYPE HAVING HIGHER RANGE
+
+LONG DOUBLE   12
+DOUBLE        8
+LONG          4
+INT           4
+SHORT         2
+CHAR          1
+BOOL          1
+
+THIS RELATION IS FOLLOWED IN ALL COMPILERS :
+sizeof(char) <= sizeof(short) <= sizeof(int) <= sizeof(long) <= sizeof(long long)
+
+
+2.EXPLICIT
+
+WE JUST WRITE THE TARGET DATA TYPE INTO WHICH WE WANT TO CONVERT.
+
+
+
+
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    cout<<('A'+1);//IMLIICIT TYPE CONVERSION
+    cout<<(char)('A'+1);//EXPLICIT TYPE CONVERSION
+    return(0);
+}
+
+
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int b= (int)4.69;
+    cout<<b<<endl;
+    b=int(4.69);
+    cout<<b;
+    return(0);
+}
