@@ -8,6 +8,7 @@ CASTING OF DATA TYPES :
 LONG DOUBLE   12
 DOUBLE        8
 LONG          4
+FLOAT         4
 INT           4
 SHORT         2
 CHAR          1
