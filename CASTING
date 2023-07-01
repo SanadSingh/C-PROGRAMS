@@ -48,3 +48,29 @@ int main()
     cout<<b;
     return(0);
 }
+
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    
+   int i,j,n;
+   i=0;
+   cout<<"Enter the value of n : "<<endl;
+   cin>> n;
+
+   while(i<n)
+   {
+    j=0;
+    while(j<=i)
+    {
+        cout<<char('A'+i)<<"\t";
+        j++;
+    }
+    cout<<endl;
+    i++;
+   }
+
+   return(0);
+}
