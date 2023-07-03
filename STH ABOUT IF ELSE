@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n=-6;
-    if(n)// same as if(n!=0)
+    if(n)// same as if(n!=0), you can also write if(true) or if(false)
     {
         cout<<"hi";
     }
