@@ -1,0 +1,15 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    int a=4;
+    int *a1=&a;
+    int &x=a;
+    cout<<&x<<endl;
+    cout<<a1<<endl;
+    cout<<*(a1)<<endl;
+    cout<<*(&x);
+
+    return(0);
+}
